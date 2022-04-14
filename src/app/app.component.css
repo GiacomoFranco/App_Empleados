@@ -1,0 +1,69 @@
+body{
+  display: flex;
+  width: 100%;
+  background-color: #1C1632;
+}
+
+app-navigator{
+  width: 342px;
+}
+
+app-employee{
+  width: 100%;
+}
+
+
+
+/*
+#register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: black;
+}
+
+form div{
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-top: 50px;
+}
+
+#register--button{
+  border: none;
+  border-radius: 20px;
+  width: 150px;
+  height: 30px;
+  margin-top:80px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form div input{
+  border: none;
+  border-radius: 20px;
+  height: 25px;
+  width: 200px;
+  color: black;
+  padding: 10px;
+}
+
+
+#list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(10, 10, 10);
+}
+
+h1{
+  margin-bottom: 30px;
+}
+
+li{
+
+} */

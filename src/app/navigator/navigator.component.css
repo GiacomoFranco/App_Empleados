@@ -1,0 +1,148 @@
+aside{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 342px;
+  height: 100vh;
+  background-color: #141024;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+/* PROFILE */
+
+#profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: start;
+}
+
+#profile-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 4.5px solid #2A244B;
+  border-radius: 100%;
+}
+
+#profile-photo{
+  width: 132px;
+  height: 132px;
+}
+
+#profile-name{
+  font-family: 'BR Firma';
+  font-weight: 300;
+  font-size: 21px;
+  color: white;
+  margin-top: 10px;
+}
+
+/* NAVIGATOR */
+
+#nav{
+  display: flex;
+  width: 80%;
+  align-self: flex-end;
+}
+
+#nav ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  width: 100%;
+}
+
+#nav ul li{
+  display: flex;
+  font-weight:300;
+  font-size: 21px;
+  list-style: none;
+  width: 100%;
+}
+
+#nav ul li a{
+  display: flex;
+  align-items:center;
+  text-decoration: none;
+  color: #564B80;
+  width: 100%;
+  height: 52px;
+}
+
+.nav-icon{
+  width: 25px;
+  margin-right: 20px;
+  filter: brightness(0) saturate(100%) invert(32%) sepia(12%) saturate(1731%) hue-rotate(212deg) brightness(93%) contrast(94%);
+}
+
+.nav-icon_user{
+width: 15px;
+margin-right: 25px;
+margin-left: 5px;
+}
+
+.nav-icon_config{
+  width: 28px;
+  height: 28px;
+}
+
+/*ROUND EFFECT*/
+
+
+#nav ul li.active{
+  background-color: #1C1632;
+}
+
+#nav ul li.active a::before{
+  content: '';
+  position: absolute;
+  left: 40px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #1C1632;
+}
+
+
+#nav ul li.active a{
+  display: flex;
+  align-items:center;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 52px;
+}
+
+
+.active .nav-icon{
+  filter: brightness(100) saturate(100%);
+}
+
+
+/* LOG OUT */
+
+#log-out{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  height: 40px;
+  width: 195px;
+  background: rgb(75,53,225);
+  background: linear-gradient(90deg, rgba(75,53,225,1), rgba(132,84,253,1), rgba(132,84,253,1));
+  cursor: pointer;
+}
+
+#log-out span{
+  margin-left: 10px;
+  font-weight: bold;
+}

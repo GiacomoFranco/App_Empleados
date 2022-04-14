@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'BR Firma';
+  src: url(assets/fonts/BR-Firma-Black.otf) format('otf');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  src: url(assets/fonts/BR-Firma-Black-Italic.otf) format('otf');
+  font-style: italic;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  src: url(assets/fonts/BR-Firma-Bold.otf) format('otf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  src: url(assets/fonts/BR-Firma-Bold-Italic.otf) format('otf');
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  src: url(assets/fonts/BR-Firma-SemiBold-Italic.otf) format('otf');
+  font-style: italic;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  src: url(assets/fonts/BR-Firma-Medium.otf) format('otf');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  src: url(assets/fonts/BR-Firma-Light.otf) format('otf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  src: url(assets/fonts/BR-Firma-Light-Italic.otf) format('otf');
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Br Firma;
+}

@@ -66,5 +66,27 @@ main span h2{
 }
 
 #web-dev{
-  background-color: #302654;
+  margin-top: 40px;
+  background-color:#302654;
+  border-radius: 24px;
+  border-collapse: collapse;
+  position: relative;
+  overflow: hidden;
+}
+
+th{
+  height: 39px;
+  overflow: hidden;
+  font-weight: 500;
+  text-align: start;
+  color: #52437E;
+  background-color: #251D40;
+  padding-left:22px;
+  border-right: 1px solid #52437E ;
+}
+td{
+  font-weight: 300;
+  color: #B9B7C1;
+  padding: 10px 0 10px 22px;
+  border: 1px solid #52437E;
 }

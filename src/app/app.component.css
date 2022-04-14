@@ -6,6 +6,7 @@ body{
 
 app-navigator{
   width: 342px;
+  z-index: 100;
 }
 
 app-employee{

@@ -9,7 +9,7 @@
       <h3>Desarrollo web</h3>
       <hr>
       <table id="web-dev">
-        <tr>
+        <tr id="cell-type">
           <th>Nombre</th>
           <th>Correo</th>
           <th>Fecha de nacimiento</th>
@@ -18,14 +18,14 @@
           <th>Cargo</th>
           <th>Salario</th>
         </tr>
-        <tr>
-          <td>Estefanía Vélez Cárdenas</td>
-          <td>estefaniavelezc@passiflora.com</td>
-          <td>30/10/1998</td>
-          <td>24</td>
-          <td>1033.177.340</td>
-          <td>🕵️‍♀️ DevOps </td>
-          <td>4.000.000</td>
+        <tr *ngFor="let empleado of empleados">
+          <td>{{empleado.name}}</td>
+          <td>{{empleado.mail}}</td>
+          <td>{{empleado.dateBorn}}</td>
+          <td>{{empleado.age}}</td>
+          <td>{{empleado.DNI}}</td>
+          <td>{{empleado.position}}</td>
+          <td>{{empleado.salary}}</td>
         </tr>
       </table>
 

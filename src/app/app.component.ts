@@ -14,6 +14,7 @@ export class AppComponent {
   DNIInput: number = 0;
   positionInput: string="";
   salaryInput: number = 0;
+  formsSituation:boolean = false;
   empleados:Empleado[]=[
     new Empleado("Andrés", "mail@andres", "21/10/2020", 14, 1312312, "🤠", 121),
   ]

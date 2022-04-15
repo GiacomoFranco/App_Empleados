@@ -7,40 +7,10 @@
     <title></title>
   </head>
   <body>
-    <!-- <section id="register">
-      <form>
-        <div>
-          <span>Full Name</span>
-          <input type="text" name="nombre" [(ngModel)]="nameInput"/>
-        </div>
-        <div>
-          <span>E-mail</span>
-          <input type="text" name="e-mail" [(ngModel)]="mailInput"/>
-        </div>
-        <div>
-          <span>DNI</span>
-          <input type="text" name="DNI" [(ngModel)]="DNIInput"/>
-        </div>
-        <div>
-          <span>Position</span>
-          <input type="text" name="posicion" [(ngModel)]="positionInput"/>
-        </div>
-        <div>
-          <span>Salary</span>
-          <input type="text" name="salario" [(ngModel)]="salaryInput"/>
-        </div>
-        <input type="button" value="Registrar" id="register--button" (click)="newEmployee(nameInput,mailInput,DNIInput,positionInput,salaryInput)"/>
-      </form>
-    </section>
-    <section id="list">
-      <div>
-        <h1>Lista de Empleados</h1>
-        <ul>
-          <li *ngFor="let empleado of empleados">{{empleado.name}} | {{empleado.mail}} | {{empleado.DNI}} | {{empleado.position}} | {{empleado.salary}}</li>
-        </ul>
-      </div>
-    </section> -->
-    <app-navigator></app-navigator>
-    <app-employee></app-employee>
+    <div class="no-emergent-components">
+      <app-navigator></app-navigator>
+      <app-employee></app-employee>
+    </div>
+    <app-employee-forms *ngIf="formsSituation"></app-employee-forms>
   </body>
 </html>

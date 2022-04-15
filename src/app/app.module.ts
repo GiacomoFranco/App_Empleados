@@ -5,12 +5,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NavigatorComponent } from './navigator/navigator.component';
 import { EmployeeComponent } from './employee/employee.component';
+import { EmployeeFormsComponent } from './employee-forms/employee-forms.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigatorComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    EmployeeFormsComponent
   ],
   imports: [
     BrowserModule,FormsModule,

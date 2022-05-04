@@ -6,7 +6,7 @@
   <form action="">
  <div id="name">
       <span> Nombre</span>
-      <input type="text">
+      <input type="text" #name>
  </div>
  <div id="mail">
       <span> Correo</span>
@@ -34,7 +34,7 @@
       <span> Salario</span>
       <input type="text">
  </div>
- <button id="register">
+ <button id="register" (click)="addName(name.value)">
   <span>Registrar</span>
   </button>
 </form>

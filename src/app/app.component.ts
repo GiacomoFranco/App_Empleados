@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Empleado } from './empleado.model';
+import { Forms } from './forms.model'
 
 @Component({
   selector: 'app-root',
@@ -8,16 +9,24 @@ import { Empleado } from './empleado.model';
 })
 
 export class AppComponent {
+
   title = 'AppEmpleados';
+  inputTest = 'está funcionando';
+  names = ['Sofi','Machado'];
   nameInput: string="";
   mailInput: string="";
   DNIInput: number = 0;
   positionInput: string="";
   salaryInput: number = 0;
-  formsSituation:boolean = false;
+  formsSituation:boolean = Forms.formsSituation;
   empleados:Empleado[]=[
     new Empleado("Andrés", "mail@andres", "21/10/2020", 14, 1312312, "🤠", 121),
-  ]
+  ];
+
+
+  addThisName(newName:string){
+    this.names.push(newName)
+  }
 
 
   newEmployee(name:string, mail:string, bornDate:string, age:number, DNI:number, position:string, salary:number){
@@ -35,4 +44,3 @@ export class AppComponent {
     }
   }
 }
-

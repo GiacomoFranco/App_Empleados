@@ -13,6 +13,14 @@ aside{
 
 /* PROFILE */
 
+#input{
+  color: rgb(0, 68, 0);
+}
+
+#input span{
+  color: rgb(0, 255, 0);
+}
+
 #profile{
   display: flex;
   flex-direction: column;

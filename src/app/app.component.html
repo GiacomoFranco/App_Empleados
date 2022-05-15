@@ -7,13 +7,12 @@
     <title></title>
   </head>
   <body>
-    <ul>
-      <li *ngFor="let name of names">{{name}}</li>
-    </ul>
     <div class="no-emergent-components">
-      <app-navigator [input]="inputTest"></app-navigator>
+      <app-navigator></app-navigator>
       <app-employee></app-employee>
     </div>
-    <app-employee-forms *ngIf="formsSituation" (nameEmitter)="addThisName($event)"></app-employee-forms>
+    <div id="modal-component" *ngIf="modal == true">
+      <app-employee-forms></app-employee-forms>
+    </div>
   </body>
 </html>

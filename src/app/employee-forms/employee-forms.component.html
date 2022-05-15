@@ -1,7 +1,7 @@
 <div id="blur">
 </div>
 <div id="new-employee-form">
-  <img src="../../assets/img/xmark-solid.svg" alt="" id="close-button">
+  <img src="../../assets/img/xmark-solid.svg" alt="" id="close-button" (click)="closeForms()">
   <h3>Registrar <span id="clip">Empleado</span></h3>
   <form action="">
  <div id="name">
@@ -10,32 +10,33 @@
  </div>
  <div id="mail">
       <span> Correo</span>
-      <input type="text">
+      <input type="text" #mail>
  </div>
 <div id="old">
    <div id="birth">
         <span>Fecha de nacimiento</span>
-        <input type="date">
+        <input type="date" #dateBorn>
    </div>
    <div id="age">
         <span> Edad</span>
-        <input type="text">
+        <input type="text" #age>
    </div>
 </div>
  <div id="DNI">
       <span> DNI</span>
-      <input type="text">
+      <input type="text" #DNI>
  </div>
  <div id="position">
       <span> Cargo</span>
-      <input type="text">
+      <input type="text" #position>
  </div>
  <div id="salary">
       <span> Salario</span>
-      <input type="text">
+      <input type="text" #salary>
  </div>
- <button id="register" (click)="addName(name.value)">
+ <button id="register" (click)="registerEmployee(name.value,mail.value,dateBorn.value,age.value,DNI.value,position.value,salary.value)">
   <span>Registrar</span>
+    <img src="/src/assets/" alt="">
   </button>
 </form>
 </div>

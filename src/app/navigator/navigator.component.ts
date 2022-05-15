@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
+import { SwitchService } from '../switch.service';
 
 @Component({
   selector: 'app-navigator',
@@ -8,8 +9,12 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 export class NavigatorComponent implements OnInit {
 
-  @Input() input = '';
-  constructor() { }
+  constructor(private openModal:SwitchService) { }
+
+  addEmployee(){
+    this.openModal.$modal.emit(true);
+  }
+
   ngOnInit(): void {
   }
 }

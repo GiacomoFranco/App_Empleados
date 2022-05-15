@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Empleado } from './empleado.model';
-import { Forms } from './forms.model'
+import { SwitchService } from './switch.service';
 
 @Component({
   selector: 'app-root',
@@ -10,24 +10,25 @@ import { Forms } from './forms.model'
 
 export class AppComponent {
 
+  constructor(private openModal:SwitchService){
+  }
+
+  ngOnInit(){
+    this.openModal.$modal.subscribe((valor)=>(this.modal = valor))
+  }
+
+
+
   title = 'AppEmpleados';
-  inputTest = 'está funcionando';
-  names = ['Sofi','Machado'];
+  modal:boolean;
   nameInput: string="";
   mailInput: string="";
   DNIInput: number = 0;
   positionInput: string="";
   salaryInput: number = 0;
-  formsSituation:boolean = Forms.formsSituation;
   empleados:Empleado[]=[
     new Empleado("Andrés", "mail@andres", "21/10/2020", 14, 1312312, "🤠", 121),
   ];
-
-
-  addThisName(newName:string){
-    this.names.push(newName)
-  }
-
 
   newEmployee(name:string, mail:string, bornDate:string, age:number, DNI:number, position:string, salary:number){
     if (name == "" || mail == "" || bornDate == "" || age == 0 ||  DNI == 0 || position == "" || salary == 0) {

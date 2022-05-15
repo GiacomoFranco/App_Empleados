@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavigatorComponent } from './navigator/navigator.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeFormsComponent } from './employee-forms/employee-forms.component';
+import { EmployeeService } from './employee.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { EmployeeFormsComponent } from './employee-forms/employee-forms.componen
   imports: [
     BrowserModule,FormsModule,
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

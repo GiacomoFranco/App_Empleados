@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Empleado } from '../empleado.model'
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'app-employee',
@@ -7,21 +8,14 @@ import { Empleado } from '../empleado.model'
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit {
-  constructor() { }
+
+  constructor(private employeeService:EmployeeService) {
+    this.empleados = this.employeeService.empleados
+  }
 
   ngOnInit(): void {
   }
 
   empleados:Empleado[] = [
-    new Empleado("Estefania Vélez Cárdenas", "estefaniavelezc@passiflora.com", "30/10/1998", 24, 1033177340, "🕵️‍♀️ DevOps", 4000000),
-    new Empleado("Daniel Echeverri Castro", "danielecheverric@passiflora.com", "30/10/1998", 24, 1033177340, "👨‍💻 Frontend Developer", 4000000),
   ];
-
-  newEmployee(name:string, mail:string, bornDate:string, age:number, DNI:number, position:string, salary:number){
-    this.empleados.push(new Empleado(name, mail, bornDate, age, DNI, position, salary));
-
-  }
-
-
-
 }
